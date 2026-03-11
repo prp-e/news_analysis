@@ -1,0 +1,8 @@
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+fetch("/20260311231528.md")
+  .then(r => r.text())
+  .then(md => {
+    document.body.innerHTML = marked.parse(md);
+  });
+</script>
